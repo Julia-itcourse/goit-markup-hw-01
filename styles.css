@@ -1,0 +1,333 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+a:active,
+a:focus {
+  outline: none;
+}
+input:active,
+input:focus {
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+td img {
+  vertical-align: top;
+}
+input,
+select,
+button,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  background-color: transparent;
+}
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  line-height: 1;
+  background: #fff;
+  color: #000;
+  text-align: left;
+}
+input,
+select,
+button,
+textarea {
+  border: none;
+}
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+select:focus,
+select:visited,
+option:focus,
+option:visited {
+  outline: none;
+}
+/* reset end */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 1.43em;
+  min-width: 320px;
+
+  color: #757575;
+  background-color: #ffffff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Прижимает footer вниз */
+/* .layout {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+} */
+
+/* input,
+textarea {
+  font-family: ;
+} */
+
+.container {
+  max-width: 1200;
+  width: 100%;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+  font-weight: 700;
+}
+/* header */
+/* .site__nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+
+.site__nav {
+  display: inline-block;
+}
+
+.site__nav-link,
+.layout__contacts-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* hero */
+.layout__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  /* Temporary background color - to remove later */
+  background-color: rgb(45, 63, 75);
+}
+
+.btn {
+  background-color: #2196f3;
+  color: #ffffff;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.block__title,
+.cards__title {
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.block__text {
+  font-size: 14px;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+}
+
+.block__text--uppercase {
+  line-height: 1.2;
+
+  text-transform: uppercase;
+  color: #212121;
+  font-weight: 700;
+}
+/* how to add extra class/modifier to transform text to uppercase and to white? */
+.block__text--uppercase-white {
+  line-height: 1.2;
+
+  text-transform: uppercase;
+  color: #212121;
+  font-weight: 700;
+  color: #ffffff;
+
+  /* Temporary background color - to remove later */
+  background-color: rgb(45, 63, 75);
+}
+
+.cards__text {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.cards__text--bold {
+  font-weight: 500;
+  color: #212121;
+}
+
+.footer {
+  background-color: #2f303a;
+}
+.footer__item {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.address {
+  font-style: inherit;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer__item-title {
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

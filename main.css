@@ -1,48 +1,158 @@
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%;
+  list-style-type: none;
+  box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
 }
-body {
-	line-height: 1;
+button:active,
+button:focus {
+  outline: none;
 }
-ol, ul {
-	list-style: none;
+a:active,
+a:focus {
+  outline: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+input:active,
+input:focus {
+  outline: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+td,
+td img {
+  vertical-align: top;
+}
+input,
+select,
+button,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  background-color: transparent;
+}
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  line-height: 1;
+  background: #fff;
+  color: #000;
+  text-align: left;
+}
+input,
+select,
+button,
+textarea {
+  border: none;
+}
+label,
+input[type="button"],
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+select:focus,
+select:visited,
+option:focus,
+option:visited {
+  outline: none;
+}
+
 :root {
   --title-text-color: #212121;
   --primary-text-color: #757575;
@@ -236,7 +346,7 @@ h1 {
 }
 address {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
+  font-style: inherit;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
